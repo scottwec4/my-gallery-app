@@ -15,8 +15,13 @@ public class ArtworkController {
         this.artworkRepository = artworkRepository;
     }
 
-    @GetMapping
-    public List<Artwork> getAllArtworks() {
-        return artworkRepository.findAll();
+    @GetMapping("/")
+    public String home() {
+        return "index"; // loads index.html (Home page with single image)
+    }
+
+    @GetMapping("/artworks")
+    public String artworks() {
+        return "artworks"; // loads artworks.html (Bio, Showcase, Awards)
     }
 }
