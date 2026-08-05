@@ -1,0 +1,17 @@
+<div class="min-h-screen bg-[#807d77] text-white font-serif flex flex-col w-full antialiased select-none">
+
+  <!-- Full-Width Header -->
+  <app-header class="w-full"></app-header>
+
+  <!-- Expanded Main Gallery Area -->
+  <main class="w-full max-w-7xl mx-auto px-6 py-12 space-y-16 flex-grow">
+
+    <!-- Gallery Showcase Grid -->
+    <app-gallery-showcase [items]="(artGallery$ | async) ?? []"></app-gallery-showcase>
+
+    <!-- Awards Section -->
+    <app-gallery-awards [awards]="(awardsList$ | async) ?? []"></app-gallery-awards>
+
+  </main>
+
+</div>

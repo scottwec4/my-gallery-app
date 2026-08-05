@@ -1,0 +1,16 @@
+<app-header></app-header>
+
+<main class="bg-gray-900 text-white flex flex-col items-center px-6 py-6">
+  <div class="max-w-4xl w-full text-center space-y-4">
+
+    <h1 class="text-2xl md:text-3xl font-bold tracking-tight">Scott Weckbaugh</h1>
+
+    <a routerLink="/artworks" class="inline-block overflow-hidden rounded-xl shadow-2xl">
+      <img
+        [src]="currentImage"
+        alt="Featured Artwork"
+        class="w-full max-h-[70vh] object-contain mx-auto transition-opacity duration-500 ease-in-out" />
+    </a>
+
+  </div>
+</main>

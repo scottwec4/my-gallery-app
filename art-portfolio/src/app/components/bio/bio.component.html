@@ -1,0 +1,119 @@
+<div class="min-h-screen bg-[#807d77] text-stone-900 font-serif antialiased pb-20">
+
+  <!-- Header Component -->
+  <app-header class="w-full"></app-header>
+
+  <!-- Main Content Container -->
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-12">
+
+    <!-- Page Title -->
+    <header class="text-center border-b border-stone-600/40 pb-6">
+      <h1 class="text-3xl md:text-4xl font-normal uppercase tracking-[0.25em] text-[#f5f2eb]">
+        Biography
+      </h1>
+      <p class="text-sm italic text-stone-200 mt-2 font-serif tracking-wide">
+        Painter • Sculptor • Classical Guitarist • Software Engineer
+      </p>
+    </header>
+
+    <!-- Main Content Section: Two Column Layout on Desktop -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+
+      <!-- Left Column: Biography & Background -->
+      <section class="md:col-span-7 space-y-6 text-stone-100 leading-relaxed text-base">
+        <h2 class="text-xl font-semibold uppercase tracking-wider text-[#f5f2eb] border-b border-stone-500/30 pb-2">
+          Scott Weckbaugh
+        </h2>
+
+        <p class="first-letter:text-4xl first-letter:font-serif first-letter:float-left first-letter:mr-2 first-letter:text-stone-900">
+          Born in Denver, Colorado, and currently based in Des Moines, Washington, Scott Weckbaugh operates at the intersection of classical craftsmanship and modern analytical discipline. As a painter, sculptor, software engineer, and classical guitarist, his work reflects a rigorous dedication to technique, structure, and emotional depth.
+        </p>
+
+        <p>
+          Scott’s fine art practice focuses on oil painting and sculpture, drawing deep inspiration from classical traditions. Whether rendering landscapes or figurative studies, his approach emphasizes atmospheric tone, dramatic light, and structural precision.
+        </p>
+
+        <!-- Creative Disciplines Callout -->
+        <div class="bg-[#6e6b65] p-6 rounded-sm shadow-inner space-y-4 text-stone-100 border border-stone-500/40">
+          <h3 class="text-lg font-medium text-[#f5f2eb] uppercase tracking-wide">
+            Creative Disciplines
+          </h3>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-stone-200 font-sans">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-amber-200 rounded-full"></span>
+              <strong class="font-serif text-stone-100">Fine Art:</strong> Oil Painting & Sculpture
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-amber-200 rounded-full"></span>
+              <strong class="font-serif text-stone-100">Music:</strong> Classical Guitar
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-amber-200 rounded-full"></span>
+              <strong class="font-serif text-stone-100">Engineering:</strong> Software Architecture
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-amber-200 rounded-full"></span>
+              <strong class="font-serif text-stone-100">Focus:</strong> Landscape & Figurative
+            </li>
+          </ul>
+        </div>
+
+        <!-- Selected Awards & Recognition -->
+        <div class="space-y-3 pt-2">
+          <h3 class="text-lg font-medium text-[#f5f2eb] uppercase tracking-wide border-b border-stone-500/30 pb-2">
+            Selected Awards & Honors
+          </h3>
+          <ul class="space-y-2 text-sm text-stone-200 font-sans">
+            <li class="flex items-start gap-2">
+              <span class="text-amber-200 font-serif">✦</span>
+              <span><strong class="font-serif text-stone-100">1st Place in Landscape:</strong> Gage Academy of Art, <em>Best of Gage</em> (2020)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-amber-200 font-serif">✦</span>
+              <span><strong class="font-serif text-stone-100">2nd Place in Landscape:</strong> Scottsdale Artists' School, <em>Best & Brightest</em></span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-amber-200 font-serif">✦</span>
+              <span><strong class="font-serif text-stone-100">Honorable Mention:</strong> Gage Academy of Art, <em>Splitting Image</em> Exhibition</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Callout -->
+        <div class="pt-4 border-t border-stone-600/40">
+          <p class="text-sm italic text-stone-200">
+            For studio visits, gallery inquiries, or custom work, please reach out directly.
+          </p>
+          <a href="mailto:contact@scottweckbaugh.com" class="inline-block mt-4 px-6 py-2.5 bg-[#3d3733] text-amber-100 text-xs uppercase tracking-[0.2em] font-medium hover:bg-[#2e2926] hover:text-white transition-colors no-underline border border-stone-500/30 shadow">
+            Get in Touch
+          </a>
+        </div>
+      </section>
+
+      <!-- Right Column: Featured Image Area -->
+      <aside class="md:col-span-5 space-y-6">
+        <div class="bg-[#6e6b65] p-4 rounded-sm border border-stone-500/40 shadow-lg space-y-4">
+          <h3 class="text-sm uppercase tracking-widest text-[#f5f2eb] font-semibold text-center border-b border-stone-500/30 pb-2">
+            Freddy the Ragdoll studio cat
+          </h3>
+
+          <figure class="space-y-2">
+            <img
+              src="/featured-hero.jpg"
+              alt="Featured Artwork by Scott Weckbaugh"
+              class="w-full h-auto object-cover rounded-sm border border-stone-700/60 shadow-md">
+            <figcaption class="text-xs italic text-stone-300 text-center">
+            </figcaption>
+          </figure>
+
+          <blockquote class="p-3 bg-[#5c5954] rounded-sm border-l-2 border-amber-200/60 text-stone-200 italic text-xs leading-relaxed">
+            "Whether constructing software architecture, shaping a sculpture, voicing a classical fugue, or laying a brushstroke, the goal is always clarity, structure, and depth."
+          </blockquote>
+        </div>
+      </aside>
+
+    </div>
+
+  </main>
+
+</div>

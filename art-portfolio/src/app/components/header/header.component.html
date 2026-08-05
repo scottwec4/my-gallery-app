@@ -1,0 +1,76 @@
+<header class="w-full relative shadow-2xl overflow-hidden font-serif">
+
+  <!-- 1. Hero Artwork Background Banner (Height reduced to h-32 / md:h-40) -->
+  <div class="relative h-32 md:h-40 w-full bg-cover bg-center" style="background-image: url('featured-hero.jpg');">
+    <!-- Dark gradient overlay -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/40"></div>
+
+    <!-- Top Utility Bar (Contact & Newsletter styled in black) -->
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-1 flex justify-start space-x-6 text-sm md:text-base text-white-600 font-sans font-medium tracking-wider">
+      <a href="#" class="hover:text-stone-800 transition-colors">Contact</a>
+      <a href="#" class="hover:text-stone-800 transition-colors">Newsletter</a>
+    </div>
+
+    <!-- Artist Name & Branding Overlay -->
+    <div class="relative z-10 max-w-7xl mx-auto px-6 pt-1 flex flex-col items-end justify-center text-right">
+      <a routerLink="/" class="no-underline group">
+        <h1 class="text-xl md:text-3xl font-normal tracking-[0.15em] uppercase text-[#f5f2eb] drop-shadow-md">
+          Scott Weckbaugh
+        </h1>
+        <span class="block text-sm md:text-lg font-serif italic text-amber-100/80 -mt-0.5 tracking-wide font-light">
+          fine art
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 2. Translucent Bottom Navigation Bar -->
+  <div class="w-full bg-[#3d3733]/70 backdrop-blur-md border-t border-b border-white/10 text-stone-200">
+    <div class="max-w-7xl mx-auto px-6 py-1.5 flex items-center justify-between">
+
+      <!-- Primary Navigation Links -->
+      <nav class="flex items-center space-x-6 text-xs uppercase tracking-[0.2em] font-medium">
+        <a
+          routerLink="/"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="text-amber-200 font-bold border-b border-amber-200"
+          class="hover:text-amber-100 pb-0.5 transition-colors no-underline">
+          Home
+        </a>
+
+        <a
+          routerLink="/artworks"
+          routerLinkActive="text-amber-200 font-bold border-b border-amber-200"
+          class="hover:text-amber-100 pb-0.5 transition-colors no-underline">
+          Artwork
+        </a>
+
+        <a
+          routerLink="/about"
+          routerLinkActive="text-amber-200 font-bold border-b border-amber-200"
+          class="hover:text-amber-100 pb-0.5 transition-colors no-underline">
+          About
+        </a>
+
+        <a
+          routerLink="/commissions"
+          routerLinkActive="text-amber-200 font-bold border-b border-amber-200"
+          class="hover:text-amber-100 pb-0.5 transition-colors no-underline">
+          Commissions
+        </a>
+      </nav>
+
+      <!-- Social Media Icons -->
+      <div class="hidden sm:flex items-center space-x-4 text-stone-300 text-xs">
+        <a href="#" class="hover:text-white transition-colors" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="hover:text-white transition-colors" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</header>
