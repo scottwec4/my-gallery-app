@@ -1,6 +1,6 @@
 /**
  * For more details on how to configure Wrangler, refer to:
- * https://developers.cloudflare.com/workers/wrangler/configuration/
+ * https://cloudflare.com
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
@@ -36,11 +36,11 @@
 			"tag": "v1"
 		}
 	],
-	"upload_source_maps": true, // Added a comma here to prevent syntax errors
+	"upload_source_maps": true,
 
 	/**
 	 * Static Assets
-	 * Points Cloudflare Workers to your Angular build folder
+	 * Points Cloudflare Workers to your Angular build browser folder
 	 */
 	"assets": {
 		"directory": "./dist/art-portfolio/browser",
