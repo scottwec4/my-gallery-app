@@ -1,5 +1,13 @@
 {
+  "name": "art-portfolio",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
     "deploy": "npm run build && npx wrangler deploy"
   },
   "devDependencies": {
