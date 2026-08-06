@@ -43,7 +43,7 @@ export class ArtService {
       title: 'Green River WY',
       medium: 'Gouache',
       year: '2024',
-      imageUrl: 'greenRiver.jpg'
+      imageUrl: 'greenRiver.png'
     }
   ];
 
