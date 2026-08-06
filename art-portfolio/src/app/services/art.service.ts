@@ -32,21 +32,39 @@ export class ArtService {
       medium: 'Oil on Board',
       year: '2025',
       imageUrl: 'arabian.jpg'
+    },
+    {
+      title: 'Des Moines WA Twilight',
+      medium: 'Oil on Board',
+      year: '2025',
+      imageUrl: 'twilight.jpg'
+    },
+    {
+      title: 'Green River WY',
+      medium: 'Gouache',
+      year: '2024',
+      imageUrl: 'greenRiver.jpg'
     }
   ];
 
   private awardsList: AwardItem[] = [
     {
-      title: 'Fine Art Technical Composition Prize',
-      issuer: 'Academy Review Exhibition Council',
-      date: 'May 2026',
-      description: 'Recognized for elegant execution of lighting and complex structural grids.'
+      title: 'Best & Brightest',
+      issuer: 'Scottsdale Artists School',
+      date: '2026',
+      description: 'SECOND PLACE'
     },
     {
-      title: 'Distinguished Draughtsman Achievement',
-      issuer: 'Cohort Guild Masters Guild',
-      date: 'November 2025',
-      description: 'Awarded to artists demonstrating strict mastery over structural layouts.'
+      title: 'Best of Gage',
+      issuer: 'Gage Academy of Art',
+      date: '2020',
+      description: 'FIRST PLACE in Landscape.'
+    },
+    {
+      title: 'Self-Image',
+      issuer: 'Gage Academy of Art',
+      date: '2019',
+      description: 'HONORABLE MENTION'
     }
   ];
 
