@@ -44,6 +44,246 @@ export class ArtService {
       medium: 'Gouache',
       year: '2024',
       imageUrl: 'greenRiver.png'
+    },
+    {
+      title: "Charcoal Figure",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "charcoalFigure.jpg"
+    },
+    {
+      title: "Drama Study",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "dramaStudy.jpg"
+    },
+    {
+      title: "Drawing Head",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "drawingHead.jpg"
+    },
+    {
+      title: "Figure Study One",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "figureStudyOne.jpg"
+    },
+    {
+      title: "Figure Study Three",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "figureStudyThree.jpg"
+    },
+    {
+      title: "Figure Study Two",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "figureStudyTwo.jpg"
+    },
+    {
+      title: "Grand Canyon Four",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "grandcanyonFour.jpg"
+    },
+    {
+      title: "Grand Canyon One",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "grandcanyonOne.jpg"
+    },
+    {
+      title: "Grand Canyon Three",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "grandcanyonThree.jpg"
+    },
+    {
+      title: "Grand Canyon Two",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "grandcanyonTwo.jpg"
+    },
+    {
+      title: "Hand Study",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "handStudy.jpg"
+    },
+    {
+      title: "Horse One",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "horseOne.jpg"
+    },
+    {
+      title: "Horse Two",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "horseTwo.jpg"
+    },
+    {
+      title: "Landscape 1",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "landscape1.PNG"
+    },
+    {
+      title: "Landscape Two",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "landscapeTwo.jpg"
+    },
+    {
+      title: "Liberace 1",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "liberace1.jpg"
+    },
+    {
+      title: "Long Beach Wa",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "longBeachWa.jpg"
+    },
+    {
+      title: "Pensive Portrait",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "pensivePortrait.jpg"
+    },
+    {
+      title: "Plein Air 1",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "pleinAir1.jpg"
+    },
+    {
+      title: "Plein Air 2",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "pleinAir2.jpg"
+    },
+    {
+      title: "Plein Air Five",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "pleinAirFive.jpg"
+    },
+    {
+      title: "Plein Air Four",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "pleinAirFour.jpg"
+    },
+    {
+      title: "Plein Air Six",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "pleinAirSix.jpg"
+    },
+    {
+      title: "Plein Air Three",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "pleinAirThree.jpg"
+    },
+    {
+      title: "Plein Air Two",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "pleinAirTwo.jpg"
+    },
+    {
+      title: "Portrait Eight",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitEight.jpg"
+    },
+    {
+      title: "Portrait Five",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitFive.jpg"
+    },
+    {
+      title: "Portrait Four",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitFour.jpg"
+    },
+    {
+      title: "Portrait One",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitOne.jpg"
+    },
+    {
+      title: "Portrait Seven",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitSeven.jpg"
+    },
+    {
+      title: "Portrait Six",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitSix.jpg"
+    },
+    {
+      title: "Portrait Three",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitThree.jpg"
+    },
+    {
+      title: "Portrait Two",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitTwo.jpg"
+    },
+    {
+      title: "Rembrandt",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "rembrandt.jpg"
+    },
+    {
+      title: "Rembrandt Two",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "rembrandtTwo.jpg"
+    },
+    {
+      title: "San Fran Model",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "sanFranModel.jpg"
+    },
+    {
+      title: "Sargent Study",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "sargentStudy.jpg"
+    },
+    {
+      title: "Still Life One",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "stillLifeOne.jpg"
+    },
+    {
+      title: "Still Life Two",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "stillLifeTwo.jpg"
+    },
+    {
+      title: "Tree Mirror",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "treeMirror.jpg"
     }
   ];
 
