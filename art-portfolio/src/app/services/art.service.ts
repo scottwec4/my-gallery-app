@@ -22,30 +22,54 @@ export class ArtService {
   // Update these objects to explicitly include the imageUrl property or set them to undefined/placeholder links
   private artGallery: ArtItem[] = [
     {
-      title: 'Plein Air from top of North Rim',
-      medium: 'Oil on Board',
-      year: '2024',
-      imageUrl: 'GrandCannon.jpg'
-    },
-    {
       title: 'Arabian Horse',
       medium: 'Oil on Board',
       year: '2025',
       imageUrl: 'arabian.jpg'
     },
     {
-      title: 'Des Moines WA Twilight',
-      medium: 'Oil on Board',
-      year: '2025',
-      imageUrl: 'twilight.jpg'
+      title: "Drama Lady",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "dramaLady.jpg"
     },
     {
-      title: 'Green River WY',
-      medium: 'Gouache',
-      year: '2024',
-      imageUrl: 'greenRiver.png'
+      title: "Drawing Head One",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "drawingHeadOne.jpg"
     },
-     {
+    {
+      title: "Figure Study one",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "dudeFigureOne.jpg"
+    },
+    {
+      title: "Portrait Painting One",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "dudePortraitOne.jpg"
+    },
+    {
+      title: "Portrait Painting Two",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "dudePortraitTwo.jpg"
+    },
+    {
+      title: "Portrait Painting Three",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "girlPortraitOne.jpg"
+    },
+    {
+      title: 'Plein Air from top of North Rim',
+      medium: 'Oil on Board',
+      year: '2024',
+      imageUrl: 'GrandCannon.jpg'
+    },
+    {
       title: "Grand Canyon Four",
       medium: "Oil",
       year: "2024",
@@ -70,6 +94,18 @@ export class ArtService {
       imageUrl: "grandcanyonTwo.jpg"
     },
     {
+      title: 'Green River WY',
+      medium: 'Gouache',
+      year: '2024',
+      imageUrl: 'greenRiver.png'
+    },
+    {
+      title: "Hand Study",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "handStudy.jpg"
+    },
+    {
       title: "Horse One",
       medium: "Oil",
       year: "2024",
@@ -88,6 +124,24 @@ export class ArtService {
       imageUrl: "landscape1.PNG"
     },
     {
+      title: "Lady Figure One",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "ladyFigureOne.jpg"
+    },
+    {
+      title: "Lady Figure Three",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "ladyFigureThree.jpg"
+    },
+    {
+      title: "Lady Towel Head",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "ladyTowelHead.jpg"
+    },
+    {
       title: "Landscape Two",
       medium: "Oil",
       year: "2024",
@@ -104,6 +158,42 @@ export class ArtService {
       medium: "Oil",
       year: "2024",
       imageUrl: "longBeachWa.jpg"
+    },
+    {
+      title: "Long Beach Wa",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "longBeachWa.jpg"
+    },
+    {
+      title: "Man Figure Charcoal One",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "ManFigureCharcoalOne.jpg"
+    },
+    {
+      title: "My Hand",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "myHandOne.jpg"
+    },
+    {
+      title: "Lady Figure Two",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "nakedLady.jpg"
+    },
+    {
+      title: "Lady Figure Three",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "oldLady1.jpg"
+    },
+    {
+      title: "Lady Figure Four",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "pensiveLady.jpg"
     },
     {
       title: "Plein Air 1",
@@ -136,6 +226,54 @@ export class ArtService {
       imageUrl: "pleinAirSix.jpg"
     },
     {
+      title: "Liberace Two",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitLadyFive"
+    },
+    {
+      title: "Lady Portrait Four",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitLadyFour"
+    },
+    {
+      title: "Lady Portrait One",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitLadyOne"
+    },
+    {
+      title: "Lady Portrait Seven",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitLadySeven"
+    },
+    {
+      title: "Lady Portrait Six",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitLadySix"
+    },
+    {
+      title: "Lady Portrait Three",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitLadyTwo"
+    },
+    {
+      title: "Lady Portrait Three",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitLadyTwo"
+    },
+    {
+      title: "Sargent Portrait Study One",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "sargentLady.jpg"
+    },
+    {
       title: "Plein Air Three",
       medium: "Oil",
       year: "2024",
@@ -146,6 +284,54 @@ export class ArtService {
       medium: "Oil",
       year: "2024",
       imageUrl: "pleinAirTwo.jpg"
+    },
+    {
+      title: "Portrait Eight",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitEight.jpg"
+    },
+    {
+      title: "Portrait Five",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitFive.jpg"
+    },
+    {
+      title: "Portrait Four",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitFour.jpg"
+    },
+    {
+      title: "Portrait One",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitOne.jpg"
+    },
+    {
+      title: "Portrait Seven",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitSeven.jpg"
+    },
+    {
+      title: "Portrait Six",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitSix.jpg"
+    },
+    {
+      title: "Portrait Three",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitThree.jpg"
+    },
+    {
+      title: "Portrait Two",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "portraitTwo.jpg"
     },
     {
       title: "Rembrandt",
@@ -164,6 +350,12 @@ export class ArtService {
       medium: "Oil",
       year: "2024",
       imageUrl: "sanFranModel.jpg"
+    },
+    {
+      title: "Sargent Study",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "sargentStudy.jpg"
     },
     {
       title: "Still Life One",
