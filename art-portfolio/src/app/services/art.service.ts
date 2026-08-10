@@ -130,6 +130,24 @@ export class ArtService {
       imageUrl: "ladyFigureThree.jpg"
     },
     {
+      title: "Man Portrait One",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "manPortrait.jpg"
+    },
+    {
+      title: "Boy Portrait One",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "boyPortrait.jpg"
+    },
+    {
+      title: "Drawing Portrait Two",
+      medium: "Oil",
+      year: "2024",
+      imageUrl: "drawingPortrait2.jpg"
+    },
+    {
       title: "Lady Towel Head",
       medium: "Oil",
       year: "2024",
