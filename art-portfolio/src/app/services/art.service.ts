@@ -238,12 +238,6 @@ export class ArtService {
       imageUrl: "portraitLadyFour.jpg"
     },
     {
-      title: "Lady Portrait One",
-      medium: "Oil",
-      year: "2024",
-      imageUrl: "portraitLadyOne.jpg"
-    },
-    {
       title: "Lady Portrait Seven",
       medium: "Oil",
       year: "2024",
@@ -254,12 +248,6 @@ export class ArtService {
       medium: "Oil",
       year: "2024",
       imageUrl: "portraitLadySix.jpg"
-    },
-    {
-      title: "Lady Portrait Three",
-      medium: "Oil",
-      year: "2024",
-      imageUrl: "portraitLadyTwo.jpg"
     },
     {
       title: "Sargent Portrait Study One",
