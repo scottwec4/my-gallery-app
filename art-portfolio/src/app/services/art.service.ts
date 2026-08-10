@@ -265,49 +265,49 @@ export class ArtService {
       title: "Portrait Eight",
       medium: "Oil",
       year: "2024",
-      imageUrl: "portraitEight.jpg"
+      imageUrl: "portraitLadyEight.jpg"
     },
     {
       title: "Portrait Five",
       medium: "Oil",
       year: "2024",
-      imageUrl: "portraitFive.jpg"
+      imageUrl: "portraitLadyFive.jpg"
     },
     {
       title: "Portrait Four",
       medium: "Oil",
       year: "2024",
-      imageUrl: "portraitFour.jpg"
+      imageUrl: "portraitLadyFour.jpg"
     },
     {
       title: "Portrait One",
       medium: "Oil",
       year: "2024",
-      imageUrl: "portraitOne.jpg"
+      imageUrl: "portraitLadyOne.jpg"
     },
     {
       title: "Portrait Seven",
       medium: "Oil",
       year: "2024",
-      imageUrl: "portraitSeven.jpg"
+      imageUrl: "portraitLadySeven.jpg"
     },
     {
       title: "Portrait Six",
       medium: "Oil",
       year: "2024",
-      imageUrl: "portraitSix.jpg"
+      imageUrl: "portraitLadySix.jpg"
     },
     {
       title: "Portrait Three",
       medium: "Oil",
       year: "2024",
-      imageUrl: "portraitThree.jpg"
+      imageUrl: "portraitLadyThree.jpg"
     },
     {
       title: "Portrait Two",
       medium: "Oil",
       year: "2024",
-      imageUrl: "portraitTwo.jpg"
+      imageUrl: "portraitLadyTwo.jpg"
     },
     {
       title: "Rembrandt",
@@ -331,7 +331,7 @@ export class ArtService {
       title: "Sargent Study",
       medium: "Oil",
       year: "2024",
-      imageUrl: "sargentStudy.jpg"
+      imageUrl: "sargentLady.jpg"
     },
     {
       title: "Still Life One",
