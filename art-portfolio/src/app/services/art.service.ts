@@ -262,12 +262,6 @@ export class ArtService {
       imageUrl: "pleinAirTwo.jpg"
     },
     {
-      title: "Portrait Eight",
-      medium: "Oil",
-      year: "2024",
-      imageUrl: "portraitLadyEight.jpg"
-    },
-    {
       title: "Portrait Five",
       medium: "Oil",
       year: "2024",
@@ -284,18 +278,6 @@ export class ArtService {
       medium: "Oil",
       year: "2024",
       imageUrl: "portraitLadyOne.jpg"
-    },
-    {
-      title: "Portrait Seven",
-      medium: "Oil",
-      year: "2024",
-      imageUrl: "portraitLadySeven.jpg"
-    },
-    {
-      title: "Portrait Six",
-      medium: "Oil",
-      year: "2024",
-      imageUrl: "portraitLadySix.jpg"
     },
     {
       title: "Portrait Three",
