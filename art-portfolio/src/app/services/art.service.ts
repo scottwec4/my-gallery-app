@@ -22,12 +22,6 @@ export class ArtService {
   // Update these objects to explicitly include the imageUrl property or set them to undefined/placeholder links
   private artGallery: ArtItem[] = [
     {
-      title: 'Arabian Horse',
-      medium: 'Oil on Board',
-      year: '2025',
-      imageUrl: 'arabian.jpg'
-    },
-    {
       title: "Drama Lady",
       medium: "Oil",
       year: "2024",
@@ -103,7 +97,7 @@ export class ArtService {
       title: "Hand Study",
       medium: "Oil",
       year: "2024",
-      imageUrl: "handStudy.jpg"
+      imageUrl: "myHandOne.jpg"
     },
     {
       title: "Horse One",
@@ -160,22 +154,10 @@ export class ArtService {
       imageUrl: "longBeachWa.jpg"
     },
     {
-      title: "Long Beach Wa",
-      medium: "Oil",
-      year: "2024",
-      imageUrl: "longBeachWa.jpg"
-    },
-    {
       title: "Man Figure Charcoal One",
       medium: "Oil",
       year: "2024",
       imageUrl: "ManFigureCharcoalOne.jpg"
-    },
-    {
-      title: "My Hand",
-      medium: "Oil",
-      year: "2024",
-      imageUrl: "myHandOne.jpg"
     },
     {
       title: "Lady Figure Two",
@@ -229,43 +211,37 @@ export class ArtService {
       title: "Liberace Two",
       medium: "Oil",
       year: "2024",
-      imageUrl: "portraitLadyFive"
+      imageUrl: "portraitLadyFive.jpg"
     },
     {
       title: "Lady Portrait Four",
       medium: "Oil",
       year: "2024",
-      imageUrl: "portraitLadyFour"
+      imageUrl: "portraitLadyFour.jpg"
     },
     {
       title: "Lady Portrait One",
       medium: "Oil",
       year: "2024",
-      imageUrl: "portraitLadyOne"
+      imageUrl: "portraitLadyOne.jpg"
     },
     {
       title: "Lady Portrait Seven",
       medium: "Oil",
       year: "2024",
-      imageUrl: "portraitLadySeven"
+      imageUrl: "portraitLadySeven.jpg"
     },
     {
       title: "Lady Portrait Six",
       medium: "Oil",
       year: "2024",
-      imageUrl: "portraitLadySix"
+      imageUrl: "portraitLadySix.jpg"
     },
     {
       title: "Lady Portrait Three",
       medium: "Oil",
       year: "2024",
-      imageUrl: "portraitLadyTwo"
-    },
-    {
-      title: "Lady Portrait Three",
-      medium: "Oil",
-      year: "2024",
-      imageUrl: "portraitLadyTwo"
+      imageUrl: "portraitLadyTwo.jpg"
     },
     {
       title: "Sargent Portrait Study One",
