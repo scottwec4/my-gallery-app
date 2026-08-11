@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import {HeaderComponent} from '../header/header.component';
-import {CommonModule} from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-commissions-component',
   standalone: true,
-  imports: [CommonModule, HeaderComponent],
+  imports: [CommonModule, HeaderComponent, NgOptimizedImage],
   templateUrl: './commissions.component.html',
   styleUrl: './commissions.component.css',
 })
