@@ -18,7 +18,7 @@ import { ShowcaseComponent } from '../showcase/showcase.component';
 })
 export class GalleryComponent implements OnInit {
   subCategories: string[] = [
-    'portraits', 'figures', 'drawings', 'landscapes', 'still lifes', 'available work'
+    'portraits', 'figures', 'drawings', 'landscapes', 'still lifes', 'horses', 'available work'
   ];
 
   selectedCategory: string = 'portraits';
