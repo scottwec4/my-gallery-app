@@ -1,22 +1,59 @@
-<div class="min-h-screen bg-[#807d77] text-white font-serif flex flex-col w-full antialiased select-none">
+<!-- gallery.component.html -->
+<div class="min-h-screen bg-[#807d77] text-white font-serif flex flex-col w-full antialiased select-none relative">
 
+  <!-- Full-Width Header Space -->
   <app-header class="w-full"></app-header>
 
+  <!-- Sub Menu Navigation -->
   <div class="w-full bg-[#96928a] border-b border-[#6e6b66] py-2 px-6 flex justify-center space-x-6 text-sm tracking-wide">
     @for (cat of subCategories; track cat) {
       <button
         (click)="selectCategory(cat)"
         [class.text-[#c3e0b4]]="selectedCategory === cat"
-        [class.text-white]="selectedCategory !== cat"
         class="capitalize hover:text-[#c3e0b4] transition-colors duration-200 cursor-pointer font-sans font-medium">
         {{ cat }}
       </button>
     }
   </div>
 
+  <!-- Expanded Main Gallery Area -->
   <main class="w-full max-w-7xl mx-auto px-6 py-12 flex-grow">
-
-    <app-gallery-showcase [items]="(filteredGallery$ | async) ?? []"></app-gallery-showcase>
-
+    <!-- Catching image selections using a custom event output bound to your openLightbox method -->
+    <app-gallery-showcase
+      [items]="(filteredGallery$ | async) ?? []"
+      (imageClick)="openLightbox($event)">
+    </app-gallery-showcase>
   </main>
+
+  <!-- 🔍 Lightbox Overlay Modal -->
+  @if (isLightboxOpen && activeItem) {
+    <div class="fixed inset-0 bg-[#807d77] bg-opacity-95 z-50 flex flex-col items-center justify-start pt-8 px-6 transition-opacity duration-300">
+
+      <!-- Upper Header Controller Row (Expanded to max-w-6xl) -->
+      <div class="w-full max-w-6xl flex justify-between items-end mb-4 border-b border-white/10 pb-2">
+        <!-- Elegant Light Serif Text Title directly above the canvas image -->
+        <h2 class="text-4xl font-serif text-[#e4e2dd] tracking-wider uppercase font-light select-none">
+          {{ activeItem.title }}
+        </h2>
+
+        <!-- Minimal Close Button 'X' -->
+        <button
+          (click)="closeLightbox()"
+          class="text-white hover:text-gray-300 text-4xl font-light focus:outline-none transition-colors duration-150 p-2 cursor-pointer leading-none"
+          aria-label="Close layout overlay">
+          ✕
+        </button>
+      </div>
+
+      <!-- Centered Scaled Fine Art Canvas View Frame (Expanded sizing applied here) -->
+      <div class="relative max-w-6xl w-full flex items-center justify-center bg-transparent shadow-2xl rounded-sm overflow-hidden flex-grow mb-6">
+        <img
+          [src]="activeItem.imageUrl"
+          [alt]="activeItem.title"
+          class="max-h-[88vh] w-auto max-w-full object-contain block select-none pointer-events-none transition-all duration-300 shadow-black/40 shadow-2xl" />
+      </div>
+
+    </div>
+  }
+
 </div>

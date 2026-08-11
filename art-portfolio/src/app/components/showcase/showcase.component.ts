@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -13,7 +13,10 @@ import { CommonModule } from '@angular/common';
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-3xl mx-auto pt-6">
         @for (art of items; track art.title) {
           <div class="flex flex-col items-center group">
-            <div class="bg-[#52504b] p-3 shadow-xl border border-[#9a9791]/20 max-w-sm w-full transition-all duration-300 group-hover:scale-[1.01]">
+            <!-- Added click bindings and interactivity indicators -->
+            <div
+              (click)="imageClick.emit(art)"
+              class="bg-[#52504b] p-3 shadow-xl border border-[#9a9791]/20 max-w-sm w-full transition-all duration-300 group-hover:scale-[1.01] cursor-pointer">
               <div class="bg-[#2e2d2a] aspect-[3/4] w-full overflow-hidden flex items-center justify-center">
                 @if (art.imageUrl) {
                   <img [src]="art.imageUrl" [alt]="art.title" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity">
@@ -35,4 +38,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ShowcaseComponent {
   @Input() items: any[] = [];
+
+  // Custom event stream communicating selected elements upstream to parent layout
+  @Output() imageClick = new EventEmitter<any>();
 }

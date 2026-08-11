@@ -27,6 +27,10 @@ export class GalleryComponent implements OnInit {
   awardsList$!: Observable<AwardItem[]>;
   filteredGallery$!: Observable<ArtItem[]>;
 
+  // Lightbox Modal States
+  isLightboxOpen: boolean = false;
+  activeItem: ArtItem | null = null;
+
   constructor(private artService: ArtService) {}
 
   ngOnInit(): void {
@@ -46,5 +50,15 @@ export class GalleryComponent implements OnInit {
     this.filteredGallery$ = this.artGallery$.pipe(
       map(items => items.filter(item => item.category.toLowerCase() === this.selectedCategory.toLowerCase()))
     );
+  }
+
+  openLightbox(item: ArtItem): void {
+    this.activeItem = item;
+    this.isLightboxOpen = true;
+  }
+
+  closeLightbox(): void {
+    this.isLightboxOpen = false;
+    this.activeItem = null;
   }
 }
