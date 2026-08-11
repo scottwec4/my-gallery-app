@@ -1,17 +1,22 @@
 <div class="min-h-screen bg-[#807d77] text-white font-serif flex flex-col w-full antialiased select-none">
 
-  <!-- Full-Width Header -->
   <app-header class="w-full"></app-header>
 
-  <!-- Expanded Main Gallery Area -->
-  <main class="w-full max-w-7xl mx-auto px-6 py-12 space-y-16 flex-grow">
+  <div class="w-full bg-[#96928a] border-b border-[#6e6b66] py-2 px-6 flex justify-center space-x-6 text-sm tracking-wide">
+    @for (cat of subCategories; track cat) {
+      <button
+        (click)="selectCategory(cat)"
+        [class.text-[#c3e0b4]]="selectedCategory === cat"
+        [class.text-white]="selectedCategory !== cat"
+        class="capitalize hover:text-[#c3e0b4] transition-colors duration-200 cursor-pointer font-sans font-medium">
+        {{ cat }}
+      </button>
+    }
+  </div>
 
-    <!-- Gallery Showcase Grid -->
-    <app-gallery-showcase [items]="(artGallery$ | async) ?? []"></app-gallery-showcase>
+  <main class="w-full max-w-7xl mx-auto px-6 py-12 flex-grow">
 
-    <!-- Awards Section -->
-    <app-gallery-awards [awards]="(awardsList$ | async) ?? []"></app-gallery-awards>
+    <app-gallery-showcase [items]="(filteredGallery$ | async) ?? []"></app-gallery-showcase>
 
   </main>
-
 </div>
