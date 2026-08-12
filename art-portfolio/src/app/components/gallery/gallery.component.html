@@ -4,16 +4,18 @@
   <!-- Full-Width Header Space -->
   <app-header class="w-full"></app-header>
 
-  <!-- Sub Menu Navigation -->
-  <div class="w-full bg-[#96928a] border-b border-[#6e6b66] py-2 px-6 flex justify-center space-x-6 text-sm tracking-wide">
-    @for (cat of subCategories; track cat) {
-      <button
-        (click)="selectCategory(cat)"
-        [class.text-[#c3e0b4]]="selectedCategory === cat"
-        class="capitalize hover:text-[#c3e0b4] transition-colors duration-200 cursor-pointer font-sans font-medium">
-        {{ cat }}
-      </button>
-    }
+  <!-- Sub Menu Navigation (Horizontal Swipe for Mobile, Centered for Desktop) -->
+  <div class="w-full bg-[#96928a] border-b border-[#6e6b66] py-3 px-4 flex items-center justify-start sm:justify-center overflow-x-auto overflow-y-hidden whitespace-nowrap [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+    <div class="flex space-x-6 mx-auto px-4">
+      @for (cat of subCategories; track cat) {
+        <button
+          (click)="selectCategory(cat)"
+          [class.text-[#c3e0b4]]="selectedCategory === cat"
+          class="capitalize hover:text-[#c3e0b4] transition-colors duration-200 cursor-pointer font-sans font-medium text-sm tracking-wide inline-block">
+          {{ cat }}
+        </button>
+      }
+    </div>
   </div>
 
   <!-- Expanded Main Gallery Area -->
