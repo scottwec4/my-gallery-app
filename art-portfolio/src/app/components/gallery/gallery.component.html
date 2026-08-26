@@ -49,8 +49,9 @@
 
       <!-- Centered Scaled Fine Art Canvas View Frame (Expanded sizing applied here) -->
       <div class="relative max-w-6xl w-full flex items-center justify-center bg-transparent shadow-2xl rounded-sm overflow-hidden flex-grow mb-6">
+        <!-- FIXED: Added cloudflareImage pipe passing activeItem.id -->
         <img
-          [src]="activeItem.imageUrl"
+          [src]="activeItem.imageUrl | cloudflareImage:activeItem.id:'public'"
           [alt]="activeItem.title"
           class="max-h-[88vh] w-auto max-w-full object-contain block select-none pointer-events-none transition-all duration-300 shadow-black/40 shadow-2xl" />
       </div>

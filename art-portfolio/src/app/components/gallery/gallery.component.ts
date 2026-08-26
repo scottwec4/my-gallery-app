@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { AsyncPipe } from '@angular/common';
-import {map, Observable} from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { ArtService, ArtItem, AwardItem } from '../../services/art.service';
 import { HeaderComponent } from '../header/header.component';
 import { ShowcaseComponent } from '../showcase/showcase.component';
+import { CloudflareImagePipe } from '../../pipes/cloudflare-image.pipe'; // Added Import
 
 @Component({
   selector: 'app-gallery',
@@ -11,9 +12,9 @@ import { ShowcaseComponent } from '../showcase/showcase.component';
   imports: [
     AsyncPipe,
     HeaderComponent,
-    ShowcaseComponent
+    ShowcaseComponent,
+    CloudflareImagePipe // Added to Imports
   ],
-
   templateUrl: './gallery.component.html'
 })
 export class GalleryComponent implements OnInit {
@@ -27,18 +28,17 @@ export class GalleryComponent implements OnInit {
   awardsList$!: Observable<AwardItem[]>;
   filteredGallery$!: Observable<ArtItem[]>;
 
-  // Lightbox Modal States
   isLightboxOpen: boolean = false;
   activeItem: ArtItem | null = null;
 
   constructor(private artService: ArtService) {}
 
   ngOnInit(): void {
-    this.artGallery$ = this.artService.getArtGallery();
-
-    this.filterImages();
+    // Fixed: Assigned data streams first before attempting to filter them
     this.artGallery$ = this.artService.getArtGallery();
     this.awardsList$ = this.artService.getAwardsList();
+
+    this.filterImages();
   }
 
   selectCategory(category: string): void {
@@ -48,7 +48,13 @@ export class GalleryComponent implements OnInit {
 
   private filterImages(): void {
     this.filteredGallery$ = this.artGallery$.pipe(
-      map(items => items.filter(item => item.category.toLowerCase() === this.selectedCategory.toLowerCase()))
+      map(items => items.filter(item => {
+        // Special condition if 'available work' category logic is driven by the status property
+        if (this.selectedCategory.toLowerCase() === 'available work') {
+          return item.status?.toLowerCase() === 'available';
+        }
+        return item.category.toLowerCase() === this.selectedCategory.toLowerCase();
+      }))
     );
   }
 

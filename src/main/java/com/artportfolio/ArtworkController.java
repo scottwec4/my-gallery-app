@@ -15,7 +15,7 @@ public class ArtworkController {
 
     private final ArtworkService artworkService;
 
-    // Swapped repository out for your service to decouple database logic
+    // Constructor injection decouples database logic via the service layer
     public ArtworkController(ArtworkService artworkService) {
         this.artworkService = artworkService;
     }
@@ -26,7 +26,7 @@ public class ArtworkController {
         return ResponseEntity.ok(artworkService.getAllArtworks());
     }
 
-    @GetMapping("/{id}") // Fixed syntax to include leading slash inside routing variable block
+    @GetMapping("/{id}")
     @PreAuthorize("permitAll()")
     public ResponseEntity<ArtworkResponseDTO> getArtworkById(@PathVariable Long id) {
         return ResponseEntity.ok(artworkService.getArtworkById(id));
@@ -39,7 +39,7 @@ public class ArtworkController {
         return ResponseEntity.status(HttpStatus.CREATED).body(createdArtwork);
     }
 
-    @PutMapping("/{id}") // Bound the target item path variable to the execution context
+    @PutMapping("/{id}")
     @PreAuthorize("hasRole('USER') or hasRole('ADMIN')")
     public ResponseEntity<ArtworkResponseDTO> updateArtwork(
             @PathVariable Long id,
@@ -47,7 +47,7 @@ public class ArtworkController {
         return ResponseEntity.ok(artworkService.updateArtwork(id, request));
     }
 
-    @DeleteMapping("/{id}") // Added tracking path segment for the deleted entity target reference
+    @DeleteMapping("/{id}")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<Void> deleteArtwork(@PathVariable Long id) {
         artworkService.deleteArtwork(id);

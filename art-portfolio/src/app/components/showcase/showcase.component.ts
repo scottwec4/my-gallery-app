@@ -1,10 +1,11 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CloudflareImagePipe } from '../../pipes/cloudflare-image.pipe';
 
 @Component({
   selector: 'app-gallery-showcase',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, CloudflareImagePipe], // Fixed: Removed duplicate import
   template: `
     <section class="space-y-12 font-serif max-w-4xl mx-auto w-full text-center">
       <h2 class="text-xl uppercase tracking-[0.25em] text-[#f5f2eb] font-sans font-bold">The Art Gallery</h2>
@@ -18,11 +19,18 @@ import { CommonModule } from '@angular/common';
               (click)="imageClick.emit(art)"
               class="bg-[#52504b] p-3 shadow-xl border border-[#9a9791]/20 max-w-sm w-full transition-all duration-300 group-hover:scale-[1.01] cursor-pointer">
               <div class="bg-[#2e2d2a] aspect-[3/4] w-full overflow-hidden flex items-center justify-center">
+
+                <!-- ==================== FIXED BLOCK ==================== -->
                 @if (art.imageUrl) {
-                  <img [src]="art.imageUrl" [alt]="art.title" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity">
+                  <img
+                    [src]="art.imageUrl | cloudflareImage:art.id:'public'"
+                    [alt]="art.title"
+                    class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity">
                 } @else {
                   <span class="text-5xl opacity-40 select-none grayscale">🎨</span>
                 }
+                <!-- ============================================================ -->
+
               </div>
             </div>
             <div class="mt-4 text-center w-full max-w-sm border-t border-[#96938d]/30 pt-3">
@@ -38,7 +46,5 @@ import { CommonModule } from '@angular/common';
 })
 export class ShowcaseComponent {
   @Input() items: any[] = [];
-
-  // Custom event stream communicating selected elements upstream to parent layout
   @Output() imageClick = new EventEmitter<any>();
 }

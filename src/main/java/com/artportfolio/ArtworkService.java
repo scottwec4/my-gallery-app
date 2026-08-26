@@ -22,7 +22,7 @@ public class ArtworkService {
     public List<ArtworkResponseDTO> getAllArtworks() {
         return artworkRepository.findAll()
                 .stream()
-                .map(ArtworkResponseDTO::new) // Uses the constructor mapping inside the DTO
+                .map(ArtworkResponseDTO::new) // Uses the constructor mapping inside the DTO record
                 .collect(Collectors.toList());
     }
 
@@ -74,13 +74,16 @@ public class ArtworkService {
     }
 
     /**
-     * Reusable private mapping helper logic
+     * Reusable private mapping helper logic updated for Java Record syntax and new fields
      */
     private void mapRequestToEntity(ArtworkRequestDTO source, Artwork destination) {
-        destination.setTitle(source.getTitle());
-        destination.setMedium(source.getMedium());
-        destination.setDimensions(source.getDimensions());
-        destination.setYear(source.getYear());
-        destination.setImageUrl(source.getImageUrl());
+        destination.setTitle(source.title());
+        destination.setMedium(source.medium());
+        destination.setDimensions(source.dimensions());
+        destination.setYear(source.year());
+        destination.setImageUrl(source.imageUrl());
+        destination.setCategory(source.category());
+        destination.setCustomId(source.customId());
+        destination.setPrice(source.price());
     }
 }
