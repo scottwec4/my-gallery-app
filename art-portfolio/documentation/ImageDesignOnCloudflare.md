@@ -60,4 +60,4 @@ await env.IMAGES.hosted.upload(imageBytes, {
   filename: "photo.jpg"
 });
 ```
-Here is the get endpoint for image ids: https://api.cloudflare.com/client/v4/accounts/2e5bb857f7458de9e60deba40539d06e/images/v1
+Here is the get endpoint for image ids: https://api.cloudflare.com/client/v4/accounts/value/images/v1
