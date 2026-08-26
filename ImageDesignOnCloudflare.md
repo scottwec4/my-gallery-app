@@ -42,7 +42,7 @@ https://imagedelivery.net/_zf5eeRnASutTkDnEPUG-Q/<image_id>/<variant_name>
 Run this cURL request to verify that your API token is active and working properly:
 ```bash
 curl -X GET "https://api.cloudflare.com/client/v4/accounts/value/tokens/verify" \
-     -H "Authorization: Bearer "
+     -H "Authorization: Bearer test"
 ```
 
 ---
