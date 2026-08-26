@@ -28,10 +28,10 @@
 ## 🔑 Environment Credentials & Testing
 
 ### Active Account Details
-* **Account ID:** `2e5bb857f7458de9e60deba40539d06e`
+* **Account ID:** ``
 * **Token Name:** `yellow-tree-6764`
-* **API Token:** `cfat_Qw33nepherPx7LMLhaOPL5f7i9uzJHZKgcGypwg37a9e83f7`
-* **Account Delivery Hash:** `_zf5eeRnASutTkDnEPUG-Q` *(Extracted from production delivery example)*
+* **API Token:** ``
+* **Account Delivery Hash:** `` *(Extracted from production delivery example)*
 
 ### Production Target URL Template
 ```text
@@ -41,8 +41,8 @@ https://imagedelivery.net/_zf5eeRnASutTkDnEPUG-Q/<image_id>/<variant_name>
 ### Verification Command
 Run this cURL request to verify that your API token is active and working properly:
 ```bash
-curl -X GET "https://api.cloudflare.com/client/v4/accounts/2e5bb857f7458de9e60deba40539d06e/tokens/verify" \
-     -H "Authorization: Bearer cfat_Qw33nepherPx7LMLhaOPL5f7i9uzJHZKgcGypwg37a9e83f7"
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/value/tokens/verify" \
+     -H "Authorization: Bearer "
 ```
 
 ---
