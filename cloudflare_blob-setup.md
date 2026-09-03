@@ -6,7 +6,7 @@
 
 ---
 
-## 📋 Integration Steps Tracker
+## Step One: Integration Steps Tracker [x]
 
 - [x] **1. Setup Cloudflare Images**
   * Created Cloudflare account and navigated to the Images dashboard.
@@ -15,7 +15,7 @@
 - [x] **3. Upload Media Assets**
   * Uploaded artwork files programmatically/via dashboard to:
     `https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/images/v1`
-- [ ] **4. Configure Delivery URLs (Pending Fix)**
+- [x] **4. Configure Delivery URLs (Pending Fix)**
   * Template format to implement: `https://imagedelivery.net/<ACCOUNT_HASH>/<IMAGE_ID>/<VARIANT_NAME>`
   * *Current local error lines:*
     ```json
@@ -25,7 +25,7 @@
 
 ---
 
-## 🔑 Environment Credentials & Testing
+## Step Two: Environment Credentials & Testing [x]
 
 ### Active Account Details
 * **Account ID:** ``
@@ -33,13 +33,13 @@
 * **API Token:** ``
 * **Account Delivery Hash:** `` *(Extracted from production delivery example)*
 
-### Production Target URL Template
+### Step Three: setup production Target URL Template in ng client [x]
 ```text
 https://imagedelivery.net/_zf5eeRnASutTkDnEPUG-Q/<image_id>/<variant_name>
 ```
 
-### Verification Command
-Run this cURL request to verify that your API token is active and working properly:
+### Step Four: Verification Command [x]
+Run this CURL request to verify that your API token is active and working properly:
 ```bash
 curl -X GET "https://api.cloudflare.com/client/v4/accounts/value/tokens/verify" \
      -H "Authorization: Bearer test"
@@ -47,17 +47,6 @@ curl -X GET "https://api.cloudflare.com/client/v4/accounts/value/tokens/verify" 
 
 ---
 
-## 🛠️ Planned Database Architecture & Pipeline
-**Goal:** Capture the unique image IDs returned by Cloudflare, store them inside a PostgreSQL database alongside photo details, package them into a clean JSON payload, and serve them to an Angular client application for dynamic image rendering.
-
-### Strategies to Dynamically Capture Image IDs
-
-#### Strategy 4: Enforce Custom Matching IDs
-Instead of utilizing auto-generated UUIDs from Cloudflare, pass an explicit ID option string during the initial upload step so that Cloudflare's `image_id` naturally mirrors your existing relational database keys.
-```javascript
-await env.IMAGES.hosted.upload(imageBytes, {
-  id: "my-db-record-123", // Matches your PostgreSQL Primary Key
-  filename: "photo.jpg"
-});
-```
-Here is the get endpoint for image ids: https://api.cloudflare.com/client/v4/accounts/value/images/v1
+## Planned PostgreSQL [ Planned ]
+**Goal:** Capture the unique image IDs returned by Cloudflare, store them inside a PostgreSQL database alongside photo details, package them into a clean JSON payload, 
+and serve them to an Angular client application for dynamic image rendering.

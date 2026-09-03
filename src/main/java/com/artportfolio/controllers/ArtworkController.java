@@ -1,5 +1,8 @@
-package com.artportfolio;
+package com.artportfolio.controllers;
 
+import com.artportfolio.services.ArtworkService;
+import com.artportfolio.dtos.ArtworkRequestDTO;
+import com.artportfolio.dtos.ArtworkResponseDTO;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

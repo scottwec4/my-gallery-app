@@ -1,5 +1,6 @@
-package com.artportfolio;
+package com.artportfolio.models;
 
+import com.artportfolio.enums.MediumType;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;

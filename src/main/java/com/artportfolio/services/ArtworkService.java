@@ -1,5 +1,9 @@
-package com.artportfolio;
+package com.artportfolio.services;
 
+import com.artportfolio.models.Artwork;
+import com.artportfolio.repositories.ArtworkRepository;
+import com.artportfolio.dtos.ArtworkRequestDTO;
+import com.artportfolio.dtos.ArtworkResponseDTO;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.List;

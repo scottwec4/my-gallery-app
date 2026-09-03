@@ -1,4 +1,4 @@
-package com.artportfolio;
+package com.artportfolio.enums;
 
 public enum MediumType {
     OIL("Oil"),

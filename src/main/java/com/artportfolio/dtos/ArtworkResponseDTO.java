@@ -1,4 +1,6 @@
-package com.artportfolio;
+package com.artportfolio.dtos;
+
+import com.artportfolio.models.Artwork;
 
 public record ArtworkResponseDTO(
         Long id,

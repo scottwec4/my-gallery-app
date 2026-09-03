@@ -1,0 +1,22 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t my-springboot-image .
+
+      - name: Run container
+        run: docker run -d -p 8080:8080
+          -e R2_ACCESS_KEY_ID=${{ secrets.R2_ACCESS_KEY_ID }}
+          -e R2_SECRET_ACCESS_KEY=${{ secrets.R2_SECRET_ACCESS_KEY }}
+          -e R2_ACCOUNT_ID=${{ secrets.R2_ACCOUNT_ID }}
+          -e R2_BUCKET_NAME=${{ secrets.R2_BUCKET_NAME }}
+          my-springboot-image
